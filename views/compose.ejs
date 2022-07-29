@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("partials/header") -%> 
+
+<body>
+    <%- include("partials/navbar") -%>
+
+    <div class="container">
+        <h1>Compose</h1>
+        <form action="/compose" method="post">
+            <div class="mb-3">
+                <label for="postTitle" class="form-label"><b>Title</b></label>
+                <input type="text" class="form-control" name="postTitle" id="postTitle" autocomplete="off">
+                <label for="postContent" class="form-label"><b>Post</b></label>
+                <textarea class="form-control" name="postContent" id="postContent" rows="5"></textarea>
+            </div>
+            <button type="submit" name="button" class="btn btn-primary">Publish</button>
+        </form>
+    </div>
+
+
+    <%- include("partials/footer") -%> 
+</body>
+</html>

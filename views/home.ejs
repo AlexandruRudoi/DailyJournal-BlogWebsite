@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("partials/header") -%> 
+
+<body>
+    <%- include("partials/navbar") -%>
+
+    <div class="container">
+        <h1>Home</h1>
+        <p><%= startingContent %> </p>
+        <% posts.forEach((post) => { %> 
+            <h1><%= post.title %></h1>
+
+            <form action="/delete-post" method="post">
+                <input type="hidden" name="postId" value="<%= post._id %>">
+                <button class="btn"><i class="fa-solid fa-trash"></i></button>
+            </form>
+
+            <p>
+                <%= (post.content).substring(0,100) + " ..." %> 
+                <a href="/posts/<%= post._id %>" id="Read-Me">Read More</a>
+            </p>
+        <% }); %> 
+        <div class="col text-center">
+            <a href="/compose" class="btn btn-success text-center" id="btn-write">What's going on?</a>
+        </div>
+    </div>
+
+    <%- include("partials/footer") -%>
+
+    <script>
+        document.querySelectorAll("a")[0].classList.add("active");
+    </script>
+</body>
+</html>
