@@ -1,4 +1,4 @@
-## <p align="center"><a href="https://dailyjournal-blog1337.herokuapp.com/"><img src="https://i.postimg.cc/njFQwkss/logo.png" alt="logo" width="150px" border="0"></a></p>Blog-Website
+## <p align="center"><a href="https://dailyjournal-blog1337.herokuapp.com/"><img src="https://i.postimg.cc/njFQwkss/logo.png" alt="logo" width="150px" border="0"></a></p>Daily Journal
 
 A **blog** is a discussion or informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts).
 
