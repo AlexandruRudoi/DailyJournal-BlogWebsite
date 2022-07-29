@@ -8,7 +8,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
-mongoose.connect('mongodb+srv://admin-alex:OGyJoLXwiUnFxtWu@cluster0.bgyt3ji.mongodb.net/blogDB', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost:27017/blogDB', {useNewUrlParser: true});
 
 // Schema for blog posts
 const postSchema = {
