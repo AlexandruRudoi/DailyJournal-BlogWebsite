@@ -15,12 +15,11 @@ A **blog** is a discussion or informational website published on the World Wide 
   * EJS
   * Lodash
   * Mongoose
-+ Implementation of MongoDB & MongoDB Atlas
++ Implementation of MongoDB
 + Responsive design & Media Queries
 + Code with accessibility
 + Conventions & Best Practices
 + Semantic Elements
-+ Search engine optimization
 
 ---
 
